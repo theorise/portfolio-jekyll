@@ -2,6 +2,7 @@
 # Front matter comment to ensure Jekyll properly reads file.
 ---
 
-body {
-  background-color: #ddf;
-}
+@import "reset";
+@import "base";
+@import "typography";
+@import "header";
