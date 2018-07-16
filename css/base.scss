@@ -1,16 +1,46 @@
 body {
 	font-family: -apple-system, BlinkMacSystemFont, sans-serif;
-	background: #eee;
+	background: #f6f6f6;
 	display: flex;
 	flex-wrap: wrap;
+	letter-spacing: 0.05rem;
 }
 
 
 .wrapper {
 	width: 100%;
-	padding: 6vw 12vw;
+	padding: 0 10px;
+	max-width: 960px;
+	margin: 0 auto;
 }
 
 .project {
-	margin-bottom: 7.5rem;
+	margin-bottom: 12.5rem;
+}
+
+.project--img {
+	background-color: #fff;
+	margin-bottom: 2rem;
+	transition: all 200ms;
+
+	&:hover {
+		background-color: rgba(#fff, 0.5);
+		box-shadow: 0 2rem 10rem 0 rgba(#111, 0.05);
+	}
+}
+
+.project--txt {
+	width: 100%;
+
+	p {
+		max-width: 640px;
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+}
+
+.project--section {
+	margin-bottom: 4rem;
 }

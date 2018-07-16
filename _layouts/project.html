@@ -1,0 +1,50 @@
+---
+layout: default
+---
+
+<article>
+  <header>
+    <h1>{{ page.title }} <span class="title__company">&horbar; {{ page.company }}</span></h1>
+  </header>
+
+  <section class="project--section">
+    <h2>Overview</h2>
+    <p>{{ page.overview }}</p>
+  </section>
+
+  <section class="project--section">
+    <h2>Problem</h2>
+    <p>{{ page.problem }}</p>
+  </section>
+
+  <section class="project--section">
+    <h2>Analysis</h2>
+  </section>
+
+  <section class="project--section">
+    <h2>Userflows</h2>
+  </section>
+
+  <section class="project--section">
+    <h2>Design</h2>
+  </section>
+
+  <section class="project--section">
+    <h2>Prototype</h2>
+  </section>
+
+  <section class="project--section">
+    <h2>Conclusion</h2>
+  </section>
+
+  {{ content }}
+
+  <div class="PageNavigation">
+    {% if page.previous.url %}
+      <a class="prev" href="{{page.previous.url}}">&laquo; {{page.previous.title}}</a>
+    {% endif %}
+    {% if page.next.url %}
+      <a class="next" href="{{page.next.url}}">{{page.next.title}} &raquo;</a>
+    {% endif %}
+  </div>
+</article>

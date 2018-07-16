@@ -1,42 +1,31 @@
 ---
 layout: default
 ---
+
 <section class="title">
   <h1>
-      Design for the people, <br />not the
+      {{ site.title }}
       <div class="title__slide">
-        <span class="title__highlight"><img src="/assets/img/robot.png"> robots</span>
-        <span class="title__highlight"><img src="/assets/img/magician.png"> experts</span>
-        <span class="title__highlight"><img src="/assets/img/spider.png"> spiders</span>
-        <span class="title__highlight"><img src="/assets/img/money.png"> money</span>
-        <span class="title__highlight"><img src="/assets/img/alien.png"> aliens</span>
+        {% for node in site.titlenodes %}
+          <span class="title__highlight">{{ node.text }}</span>
+        {% endfor %}
       </div>
   </h1>
 </section>
 
+{% for post in site.posts %}
 <article class="project">
-  <div class="project--img"></div>
+  <a class="project--img" href="{{ post.url }}">
+    <img src="/assets/img/project-1-l.png">
+  </a>
   <div class="project--txt">
-    <h2><strong>Click & Collect</strong> for Intersport</h2>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ornare tempus sagittis. Sed eleifend libero eget tortor mattis, quis faucibus justo lobortis. Suspendisse sed elit id felis congue.</p>
-    <a class="link" href="project--link">Read more</a>
+    <div>
+      <h2>{{ post.title }} <span class="title__company">&horbar; {{ post.company }}<span></h2>
+      <p>{{ post.description }}</p>
+      <a href="{{ post.url }}" class="link">
+        <span>View Project</span> &rightarrow;
+      </a>
+    </div>
   </div>
 </article>
-
-<article class="project">
-  <div class="project--img"></div>
-  <div class="project--txt">
-    <h2><strong>Click & Collect</strong> for Intersport</h2>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ornare tempus sagittis. Sed eleifend libero eget tortor mattis, quis faucibus justo lobortis. Suspendisse sed elit id felis congue.</p>
-    <a class="link" href="project--link">Read more</a>
-  </div>
-</article>
-
-<article class="project">
-  <div class="project--img"></div>
-  <div class="project--txt">
-    <h2><strong>Click & Collect</strong> for Intersport</h2>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ornare tempus sagittis. Sed eleifend libero eget tortor mattis, quis faucibus justo lobortis. Suspendisse sed elit id felis congue.</p>
-    <a class="link" href="project--link">Read more</a>
-  </div>
-</article>
+{% endfor %}

@@ -1,42 +1,53 @@
 h1 {
-  color: #333;
+  color: #444;
   font-size: 5rem;
   font-weight: 700;
   letter-spacing: -0.05rem;
   line-height: 1.25;
-  margin-bottom: 10rem;
+  padding: 10vh 0;
   position: relative;
+
+  .title__highight {
+    // font-size: 2.5rem;
+    font-weight: 300;
+  }
 }
 
 h2 {
-  color: #333;
-  font-size: 1.5rem;
-  line-height: 1.25;
+  color: #444;
+  font-size: 1.25rem;
+  font-weight: 700;
   margin-bottom: 1rem;
   position: relative;
+  line-height: 1.75;
 
-  strong {
-    font-weight: 700;
+  .title__highight {
+    font-weight: 300;
   }
 }
 
 p {
-  color: #333;
+  color: #444;
   font-weight: 200;
   line-height: 1.5;
   margin-bottom: 1rem;
 }
 
-.link {
-  color: #333;
-  text-decoration: none;
-  font-weight: 600;
-  opacity: 0.6;
 
+.link {
+	color: rgba(blue, 0.75);
+	font-size: 0.875rem;
+	text-decoration: none;
+
+	span {
+		padding-bottom: 2px;
+	}
+
+	&:hover,
   &.is-active {
-    opacity: 1;
-    padding-bottom: 0.25rem;
-    border-bottom: 0.25rem solid #333;
+    span {
+		border-bottom: 2px solid rgba(blue, 0.75);
+  	}
   }
 }
 
@@ -45,8 +56,12 @@ p {
 }
 
 .title__highlight {
-  color: #aaa;
+  color: rgba(blue, 0.75);
   text-decoration: none;
+}
+
+.title__company {
+  font-weight: 200;
 }
 
 .title__slide {
