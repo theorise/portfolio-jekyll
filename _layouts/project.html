@@ -3,48 +3,133 @@ layout: default
 ---
 
 <article>
-  <header>
-    <h1>{{ page.title }} <span class="title__company">&horbar; {{ page.company }}</span></h1>
+  <header class="title title__small">
+    <h1>{{ page.title }} <span class="title__company">at {{ page.company }}</span></h1>
   </header>
 
-  <section class="project--section">
-    <h2>Overview</h2>
+  <section class="project--section" id="overview">
     <p>{{ page.overview }}</p>
   </section>
 
-  <section class="project--section">
-    <h2>Problem</h2>
-    <p>{{ page.problem }}</p>
+  <section class="project--section project--process">
+    <a href="#" class="link">
+      <span>SHOW DESIGN PROCESS</span>  &downarrow;
+    </a>
   </section>
 
-  <section class="project--section">
-    <h2>Analysis</h2>
+  <div>
+    {% if page.analysis %}
+    <section class="project--section" id="analysis">
+      <h2>Analysis</h2>
+      <p>{{ page.analysis }}</p>
+    </section>
+    {% endif %}
+
+    {% if page.goals %}
+    <section class="project--section" id="goals">
+      <h2>The Project Goals</h2>
+      {{ page.goals }}
+    </section>
+    {% endif %}
+
+    {% if page.personas %}
+    <section class="project--section" id="personas">
+      <h2>Creating user personas</h2>
+      <img src="/assets/projects/{{ page.metaname }}/personas.png" style="width: 100%;">
+    </section>
+    {% endif %}
+
+    {% if page.userflows %}
+    <section id="userflows">
+      <h2>Userflows</h2>
+      <div class="project--section">
+        <h3>The original flow</h3>
+        {{ page.userfloworiginaltext }}
+        <img src="/assets/projects/{{ page.metaname }}/flow-original.png">
+      </div>
+      <div class="project--section">
+        <h3>The suggested flow</h3>
+        {{ page.userflowsuggestedtext }}
+        <img src="/assets/projects/{{ page.metaname }}/flow-suggested.png">
+      </div>
+    </section>
+    {% endif %}
+
+    <section class="project--section">
+      <a href="#" class="link">
+        <span>SEE DESIGN PROCESS</span>  &downarrow;
+      </a>
+    </section>
+  </div>
+
+  {% if page.prototype %}
+  <section class="project--section" id="prototype">
+    <div class="design{% if details.block %} design__block{% endif %}">
+      <div class="design--img">
+        <video controls
+             muted
+             src="/assets/projects/{{ page.metaname }}/prototype.mp4"
+             width="303"
+             height="540">
+            <p>Your browser doesn't support HTML5 video. Here is  a <a class="link" href="/assets/projects/{{ page.metaname }}/prototype.mp4"><span>link to the video</span> &DownTeeArrow;</a> instead.</p>
+      </div>
+      <div class="design--text" style="margin-top: 2rem;">
+        {{ page.prototype }}
+      </div>
+    </div>
+  </video>
+  </section>
+  {% endif %}
+
+  <section class="project--section" id="design">
+    {% for designs in page.designs %}
+      {% for design in designs %}
+        {% for details in design %}
+          {% if details != "design" %}
+          <div class="design{% if details.block %} design__block{% endif %}">
+
+            <div class="design--img">
+              <img src="/assets/projects/{{ page.metaname }}/{{ details.img }}" width="{{ details.width }}">
+            </div>
+            <div class="design--text">
+              {{ details.description }}
+            </div>
+          </div>
+          {% endif %}
+        {% endfor %}
+      {% endfor %}
+    {% endfor %}
   </section>
 
-  <section class="project--section">
-    <h2>Userflows</h2>
+  {% if page.resources %}
+  <section class="project--section" id="resources">
+    <h2>Resources</h2>
+
+    {% for resources in page.resources %}
+      {% for resource in resources %}
+        {% for item in resource %}
+          {% if item != "resource" %}
+            <p><a href="/assets/projects/{{ page.metaname }}/{{ item.filename }}" class="link"><span>Download {{ item.name }}</span> &DownTeeArrow;</a></p>
+          {% endif %}
+        {% endfor %}
+      {% endfor %}
+    {% endfor %}
   </section>
+  {% endif %}
 
-  <section class="project--section">
-    <h2>Design</h2>
-  </section>
-
-  <section class="project--section">
-    <h2>Prototype</h2>
-  </section>
-
-  <section class="project--section">
-    <h2>Conclusion</h2>
-  </section>
-
-  {{ content }}
-
-  <div class="PageNavigation">
+  <nav class="project--section nav--articles" id="articlenav">
     {% if page.previous.url %}
-      <a class="prev" href="{{page.previous.url}}">&laquo; {{page.previous.title}}</a>
+      <div class="article--item">
+        <p class="small">&leftarrow; Previous article</p>
+        <a class="link link__dark" href="{{page.previous.url}}"><span>{{page.previous.title}}</span></a>
+      </div>
     {% endif %}
     {% if page.next.url %}
-      <a class="next" href="{{page.next.url}}">{{page.next.title}} &raquo;</a>
+      <div class="article--item article--next">
+        <p class="small">Next article &rightarrow;</p>
+        <a class="link link__dark" href="{{page.next.url}}"><span>{{page.next.title}}</span></a>
+      </div>
     {% endif %}
-  </div>
+  </nav>
+</div>
 </article>

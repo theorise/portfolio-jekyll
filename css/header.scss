@@ -2,8 +2,11 @@
   box-sizing: border-box;
   display: flex;
   justify-content: space-between;
-  margin-bottom: 10vh;
-  padding: 4rem 0;
+  margin: 4rem 0 4rem 0;
+  padding: 4rem 0 1rem 0;
+  position: sticky;
+  top: -3rem;
+  z-index: 2;
 }
 
 .nav {
@@ -16,24 +19,28 @@
   color: rgba(blue, 0.75);
   text-decoration: none;
   text-transform: uppercase;
+  margin-top: 0.5rem;
   font-weight: 700;
 }
 
 .nav--list {
   display: flex;
-  margin: 0;
-  padding: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+  list-style-type: none;
 }
 
 .nav--item {
+  opacity: 1;
+
   & + .nav--item {
     margin-left: 2.5rem;
   }
 
   .link {
+    line-height: 2rem;
     font-size: 1rem;
     font-weight: 700;
-    color: #444;
     text-transform: uppercase;
   }
 }

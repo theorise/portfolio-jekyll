@@ -6,19 +6,3 @@
 @import "base";
 @import "typography";
 @import "header";
-
-
-.project {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.project--txt {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-}
-
-img {
-  max-width: 100%;
-}

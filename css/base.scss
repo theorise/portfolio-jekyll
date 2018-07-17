@@ -15,25 +15,26 @@ body {
 }
 
 .project {
-	margin-bottom: 12.5rem;
+	justify-content: center;
+	margin-bottom: 4rem;
+	padding: 2rem;
+	display: flex;
 }
 
 .project--img {
-	background-color: #fff;
 	margin-bottom: 2rem;
-	transition: all 200ms;
-
-	&:hover {
-		background-color: rgba(#fff, 0.5);
-		box-shadow: 0 2rem 10rem 0 rgba(#111, 0.05);
-	}
+	width: calc(35% - 10px);
+	overflow: hidden;
 }
 
 .project--txt {
-	width: 100%;
+	display: flex;
+	align-items: center;
+	width: calc(50% - 10px);
+	margin-left: 20px;
 
 	p {
-		max-width: 640px;
+		margin-bottom: 2rem;
 
 		&:last-child {
 			margin-bottom: 0;
@@ -41,6 +42,90 @@ body {
 	}
 }
 
+.project--year p {
+	font-weight: 700;
+	margin-bottom: 0;
+}
+
 .project--section {
 	margin-bottom: 4rem;
+
+	&.project--process {
+		margin-bottom: 8rem;
+	}
+
+	ul {
+		max-width: 550px;
+	}
+}
+
+.project--prototype {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+
+	h2 {
+		width: 100%;
+	}
+}
+
+.personas {
+	display: flex;
+
+	> div {
+		max-width: 100%;
+		margin-right: 10px;
+
+		&:last-child {
+			margin-right: 0;
+		}
+	}
+}
+
+img {
+	max-width: 100%;
+}
+
+.design {
+	display: flex;
+	flex-wrap: wrap;
+	margin-bottom: 4rem;
+	justify-content: center;
+	text-align: center;
+}
+
+.design__block {
+	background-color: #ececec;
+}
+
+.design--text {
+	padding: 0 2rem 1rem;
+	width: 100%;
+
+	p {
+		font-size: 0.75rem;
+		letter-spacing: 0.025rem;
+		opacity: 0.75;
+	}
+}
+
+.design--img {
+	width: 100%;
+}
+
+.nav--articles {
+	display: flex;
+	justify-content: space-between;
+	margin: 6rem 0;
+	padding: 2rem 0;
+
+	.link {
+		text-transform: uppercase;
+	}
+
+	.article--item.article--next {
+		text-align: right;
+		margin-right: 0;
+		margin-left: auto;
+	}
 }

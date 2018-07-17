@@ -13,13 +13,13 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: Design for the people <br />not the
+title: I'm a designer with a passion for
 titlenodes:
-- text: thing1
-- text: thing2
-- text: thing3
-- text: thing4
-- text: thing5
+- text: simplicity
+- text: accessibility
+- text: technology
+- text: ethics
+- text: patterns
 email: contact@danoc.nl
 description: >- # this means to ignore newlines until "baseurl:"
   Write an awesome description for your new site here. You can edit this

@@ -2,7 +2,7 @@
 layout: default
 ---
 
-<section class="title">
+<header class="title">
   <h1>
       {{ site.title }}
       <div class="title__slide">
@@ -11,19 +11,19 @@ layout: default
         {% endfor %}
       </div>
   </h1>
-</section>
+</header>
 
 {% for post in site.posts %}
 <article class="project">
-  <a class="project--img" href="{{ post.url }}">
-    <img src="/assets/img/project-1-l.png">
+  <a class="project--img" href="{{ post.url }}" title="View project - {{ post.title }} at {{ post.company }}">
+    <img src="/assets/projects/{{ post.metaname }}/poster-l.png" alt="{{ post.description }}">
   </a>
   <div class="project--txt">
     <div>
-      <h2>{{ post.title }} <span class="title__company">&horbar; {{ post.company }}<span></h2>
+      <h2>{{ post.title }} <span class="title__company">at {{ post.company }}</span></h2>
       <p>{{ post.description }}</p>
-      <a href="{{ post.url }}" class="link">
-        <span>View Project</span> &rightarrow;
+      <a href="{{ post.url }}" class="link" title="View project - {{ post.title }} at {{ post.company }}">
+        <span>VIEW PROJECT</span> &rightarrow;
       </a>
     </div>
   </div>
