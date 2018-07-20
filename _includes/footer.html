@@ -1,3 +1,19 @@
 <footer>
   <!-- Footer -->
+  <script>
+    function test(){
+      var activeclass = 'is-visible';
+      var process  = document.querySelector('[data-design-process]');
+      var link = event.target.parentNode;
+      link.classList.toggle(activeclass);
+      process.classList.toggle(activeclass);
+
+      if (link.classList.contains(activeclass) ) {
+        link.innerHTML = '<span>HIDE DESIGN PROCESS</span>  &uparrow;';
+      } else {
+        link.innerHTML = '<span>SHOW DESIGN PROCESS</span>  &downarrow;';
+      }
+
+    }
+  </script>
 </footer>

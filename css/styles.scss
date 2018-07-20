@@ -2,6 +2,10 @@
 # Front matter comment to ensure Jekyll properly reads file.
 ---
 
+$xs: 480px;
+$md: 762px;
+$lg: 960px;
+
 @import "reset";
 @import "base";
 @import "typography";

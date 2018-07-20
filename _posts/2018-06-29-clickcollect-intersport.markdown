@@ -33,7 +33,7 @@ designs:
       description: <p>The card leverages the native iOS wallet for quick access. An app specific implementation covers the other platforms.</p>
       img: design-7.png
       block: true
-prototype: <p>App Prototype video</p>
+prototype: <p>App prototype video</p>
 resources:
   - resource:
       filename: clickcollect.sketch

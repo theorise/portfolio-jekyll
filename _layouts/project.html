@@ -11,13 +11,13 @@ layout: default
     <p>{{ page.overview }}</p>
   </section>
 
-  <section class="project--section project--process">
-    <a href="#" class="link">
+  <section class="project--section">
+    <a href="#" class="link" onClick="test(); return false;">
       <span>SHOW DESIGN PROCESS</span>  &downarrow;
     </a>
   </section>
 
-  <div>
+  <div class="project--toggle is-hidden" data-design-process>
     {% if page.analysis %}
     <section class="project--section" id="analysis">
       <h2>Analysis</h2>
@@ -34,7 +34,7 @@ layout: default
 
     {% if page.personas %}
     <section class="project--section" id="personas">
-      <h2>Creating user personas</h2>
+      <h2>User personas</h2>
       <img src="/assets/projects/{{ page.metaname }}/personas.png" style="width: 100%;">
     </section>
     {% endif %}
@@ -54,32 +54,7 @@ layout: default
       </div>
     </section>
     {% endif %}
-
-    <section class="project--section">
-      <a href="#" class="link">
-        <span>SEE DESIGN PROCESS</span>  &downarrow;
-      </a>
-    </section>
   </div>
-
-  {% if page.prototype %}
-  <section class="project--section" id="prototype">
-    <div class="design{% if details.block %} design__block{% endif %}">
-      <div class="design--img">
-        <video controls
-             muted
-             src="/assets/projects/{{ page.metaname }}/prototype.mp4"
-             width="303"
-             height="540">
-            <p>Your browser doesn't support HTML5 video. Here is  a <a class="link" href="/assets/projects/{{ page.metaname }}/prototype.mp4"><span>link to the video</span> &DownTeeArrow;</a> instead.</p>
-      </div>
-      <div class="design--text" style="margin-top: 2rem;">
-        {{ page.prototype }}
-      </div>
-    </div>
-  </video>
-  </section>
-  {% endif %}
 
   <section class="project--section" id="design">
     {% for designs in page.designs %}
@@ -100,6 +75,25 @@ layout: default
       {% endfor %}
     {% endfor %}
   </section>
+
+  {% if page.prototype %}
+  <section class="project--section" id="prototype">
+    <div class="design{% if details.block %} design__block{% endif %}">
+      <div class="design--img">
+        <video controls
+             muted
+             src="/assets/projects/{{ page.metaname }}/prototype.mp4"
+             width="303"
+             height="540">
+            <p>Your browser doesn't support HTML5 video. Here is  a <a class="link" href="/assets/projects/{{ page.metaname }}/prototype.mp4"><span>link to the video</span> &DownTeeArrow;</a> instead.</p>
+      </div>
+      <div class="design--text" style="margin-top: 2rem;">
+        {{ page.prototype }}
+      </div>
+    </div>
+  </video>
+  </section>
+  {% endif %}
 
   {% if page.resources %}
   <section class="project--section" id="resources">

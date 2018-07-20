@@ -3,20 +3,13 @@ layout: default
 ---
 
 <header class="title">
-  <h1>
-      {{ site.title }}
-      <div class="title__slide">
-        {% for node in site.titlenodes %}
-          <span class="title__highlight">{{ node.text }}</span>
-        {% endfor %}
-      </div>
-  </h1>
+  <h1>{{ site.title }}</h1>
 </header>
 
 {% for post in site.posts %}
 <article class="project">
   <a class="project--img" href="{{ post.url }}" title="View project - {{ post.title }} at {{ post.company }}">
-    <img src="/assets/projects/{{ post.metaname }}/poster-l.png" alt="{{ post.description }}">
+    <img src="/assets/projects/{{ post.metaname }}/poster.png" alt="{{ post.description }}">
   </a>
   <div class="project--txt">
     <div>
