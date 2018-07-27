@@ -13,7 +13,7 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: I'm a designer with a passion for whatever
+title: I’m a UX Designer working to make the web a better place.
 titlenodes:
 - text: simplicity
 - text: accessibility

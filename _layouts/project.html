@@ -3,21 +3,21 @@ layout: default
 ---
 
 <article>
-  <header class="title title__small">
+  <header class="title title__small" data-block>
     <h1>{{ page.title }} <span class="title__company">at {{ page.company }}</span></h1>
   </header>
 
-  <section class="project--section" id="overview">
+  <section class="project--section" id="overview" data-block>
     <p>{{ page.overview }}</p>
   </section>
 
-  <section class="project--section">
-    <a href="#" class="link" onClick="test(); return false;">
+  <section class="project--section" data-block>
+    <a href="#" class="link" onClick="toggleContent(); return false;">
       <span>SHOW DESIGN PROCESS</span>  &downarrow;
     </a>
   </section>
 
-  <div class="project--toggle is-hidden" data-design-process>
+  <div class="project--toggle is-hidden" data-design-process data-block>
     {% if page.analysis %}
     <section class="project--section" id="analysis">
       <h2>Analysis</h2>
@@ -61,7 +61,7 @@ layout: default
       {% for design in designs %}
         {% for details in design %}
           {% if details != "design" %}
-          <div class="design{% if details.block %} design__block{% endif %}">
+          <div class="design{% if details.block %} design__block{% endif %}" data-block>
 
             <div class="design--img">
               <img src="/assets/projects/{{ page.metaname }}/{{ details.img }}" width="{{ details.width }}">
@@ -77,14 +77,15 @@ layout: default
   </section>
 
   {% if page.prototype %}
-  <section class="project--section" id="prototype">
+  <section class="project--section" id="prototype" data-block>
     <div class="design{% if details.block %} design__block{% endif %}">
       <div class="design--img">
         <video controls
              muted
              src="/assets/projects/{{ page.metaname }}/prototype.mp4"
              width="303"
-             height="540">
+             height="540"
+             class="design--video">
             <p>Your browser doesn't support HTML5 video. Here is  a <a class="link" href="/assets/projects/{{ page.metaname }}/prototype.mp4"><span>link to the video</span> &DownTeeArrow;</a> instead.</p>
       </div>
       <div class="design--text" style="margin-top: 2rem;">
@@ -96,7 +97,7 @@ layout: default
   {% endif %}
 
   {% if page.resources %}
-  <section class="project--section" id="resources">
+  <section class="project--section" id="resources" data-block>
     <h2>Resources</h2>
 
     {% for resources in page.resources %}
@@ -111,7 +112,7 @@ layout: default
   </section>
   {% endif %}
 
-  <nav class="project--section nav--articles" id="articlenav">
+  <nav class="project--section nav--articles" id="articlenav" data-block>
     {% if page.previous.url %}
       <div class="article--item">
         <p class="small">&leftarrow; Previous article</p>

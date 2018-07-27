@@ -16,6 +16,7 @@ designs:
   - design:
       description: <p>Making the delivery option a clear choice and showing customers the affect it has on the total price.</p>
       img: design-1.png
+      block: true
   - design:
       description: <p>Enabling quick access to store information and other features such as opening in Google Maps.</p>
       img: design-4.png

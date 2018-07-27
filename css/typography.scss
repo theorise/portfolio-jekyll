@@ -1,9 +1,9 @@
 h1 {
   color: #444;
-  font-size: 3rem;
-  font-weight: 700;
+  font-size: 2.5rem;
+  font-weight: 500;
   letter-spacing: -0.05rem;
-  line-height: 1.25;
+  line-height: 1.5;
   position: relative;
 
   .title__highight {
@@ -11,18 +11,18 @@ h1 {
   }
 
   @media (min-width: $md) {
-    font-size: 4rem;
+    font-size: 3rem;
   }
 
   @media (min-width: $lg) {
-    font-size: 5rem;
+    font-size: 3.5rem;
   }
 }
 
 h2 {
   color: #444;
   font-size: 1.25rem;
-  font-weight: 700;
+  font-weight: 500;
   line-height: 1.5;
   margin-bottom: 1rem;
   position: relative;
@@ -40,7 +40,7 @@ h2 {
 h3 {
   color: #444;
   font-size: 1rem;
-  font-weight: 700;
+  font-weight: 500;
   margin-bottom: 1rem;
   position: relative;
   line-height: 1.75;
@@ -103,7 +103,7 @@ p.small {
 }
 
 strong {
-  font-weight: 700;
+  font-weight: 500;
 }
 
 .title {

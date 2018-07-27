@@ -22,7 +22,6 @@ designs:
   - design:
       description: <p>Design tokens have been centralised, enabling core variables like colors to be shared cross-platform.
       img: 3.png
-      block: true
   - design:
       description: <p>Pull requests are transparent and evaluated by multiple team members.</p>
       img: 4.png
@@ -42,14 +41,12 @@ designs:
   - design:
       description: <p>Components are documented paired with code and real life examples.</p>
       img: 8.png
-      block: true
   - design:
       description: <p>Guidelines for best practices to avoid component misuse.</p>
       img: 9.png
   - design:
       description: <p>Component markup is documented for easy integration.</p>
       img: 10.png
-      block: true
   - design:
       description: <p>de Bijenkorf have starting using utility driven CSS.</p>
       img: 11.png
