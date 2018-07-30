@@ -7,10 +7,12 @@ body {
 }
 
 .wrapper {
+	box-sizing: border-box;
 	width: 100%;
 	padding: 0 20px;
 	max-width: 960px;
 	margin: 0 auto;
+	overflow: hidden;
 }
 
 .project {
@@ -19,6 +21,15 @@ body {
 	padding: 2rem 10px;
 	display: flex;
 	flex-wrap: wrap;
+	background-color: transparent;
+	opacity: 0.75;
+	transition-duration: 250ms !important;
+
+	&:hover {
+		box-shadow: 0 1rem 2rem rgba(36, 34, 56, 0.12);
+		background-color: #ececec;
+		opacity: 1;
+	}
 
 
 	@media (min-width: $md) {
@@ -126,7 +137,7 @@ img {
 	transition-duration: 250ms !important;
 
 	&:hover {
-		box-shadow: 0 1rem 4rem rgba(36, 34, 56, 0.12);
+		box-shadow: 0 1rem 2rem rgba(36, 34, 56, 0.12);
 		background-color: #ececec;
 		opacity: 1;
 	}
@@ -150,6 +161,7 @@ img {
 
 .design--video {
 	margin-top: 2rem;
+	max-width: 100%;
 }
 
 .design--img {

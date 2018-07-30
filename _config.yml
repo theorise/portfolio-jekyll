@@ -13,7 +13,7 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: I’m a UX Designer working to make the web a better place.
+title: I am a UX Designer who loves creating accessible products.
 titlenodes:
 - text: simplicity
 - text: accessibility
@@ -22,13 +22,10 @@ titlenodes:
 - text: patterns
 email: contact@danoc.nl
 description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  Dan O'Connell - I am a UX Designer who loves creating accessible products.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "/portfolio-jekyll" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: jekyllrb
-github_username:  jekyll
+github_username:  theorise
 
 # Build settings
 markdown: kramdown
