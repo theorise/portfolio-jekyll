@@ -23,12 +23,11 @@ body {
 	flex-wrap: wrap;
 	background-color: transparent;
 	opacity: 0.75;
-	transition-duration: 250ms !important;
 
 	&:hover {
-		box-shadow: 0 1rem 2rem rgba(36, 34, 56, 0.12);
-		background-color: #ececec;
-		opacity: 1;
+		.project--img {
+			transform: scale(1);
+		}
 	}
 
 
@@ -45,6 +44,8 @@ body {
 	padding: 0 2rem 75%;
 	overflow: hidden;
 	text-align: center;
+	transform: scale(0.95);
+	transition: all 500ms ease-out;
 
 	@media (min-width: $md) {
 		height: auto;
