@@ -1,32 +1,4 @@
 <footer>
-  <!-- Footer -->
-  <script>
-    function toggleContent() {
-      var activeclass = 'is-visible';
-      var process  = document.querySelector('[data-design-process]');
-      var link = event.target.parentNode;
-      link.classList.toggle(activeclass);
-      process.classList.toggle(activeclass);
-
-      if (link.classList.contains(activeclass) ) {
-        link.innerHTML = '<span>VIEW THE PROCESS</span>  &uparrow;';
-      } else {
-        link.innerHTML = '<span>HIDE THE PROCESS</span>  &downarrow;';
-      }
-    }
-
-    function fadeBlocks() {
-      var projects = document.querySelectorAll('[data-block]');
-      Array.prototype.forEach.call(projects, function(project, i) {
-        (function (i) {
-          setTimeout(function () {
-            project.classList.add('fade-in');
-          }, 350 * i);
-        })(i);
-
-      });
-    }
-
-    fadeBlocks();
-  </script>
+  <link rel="stylesheet" href="{{ "css/styles.css" | relative_url }}">
+  <script type="text/javascript" src="{{ "js/script.js" | relative_url }}" ></script>
 </footer>
