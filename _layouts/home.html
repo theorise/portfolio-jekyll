@@ -8,12 +8,12 @@ layout: default
 
 {% for post in site.posts %}
 <article class="project" data-block>
-  <a class="project--img" href="{{ post.url }}" title="View project - {{ post.title }} at {{ post.company }}">
+  <a class="project--img" href="{{ post.url }}" title="View project - {{ post.title }} &mdash; {{ post.company }}">
     <img src="/assets/projects/{{ post.metaname }}/poster.png" alt="{{ post.description }}">
   </a>
   <div class="project--txt">
     <div>
-      <h2>{{ post.title }} <span class="title__company">at {{ post.company }}</span></h2>
+      <h2><span class="title__company">{{ post.company }}</span>{{ post.title }}</h2>
       <p>{{ post.description }}</p>
       <a href="{{ post.url }}" class="link" title="View project - {{ post.title }} at {{ post.company }}">
         <span>VIEW PROJECT</span> &rightarrow;

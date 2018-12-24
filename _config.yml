@@ -14,16 +14,16 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: Dan OC
-introduction: I'm a designer who loves creating awesome digital experiences.
+introduction: I am a designer who loves creating awesome digital experiences.
 titlenodes:
 - text: simplicity
 - text: accessibility
 - text: technology
 - text: ethics
 - text: patterns
-email: contact@danoc.nl
+email: hello@danoc.nl
 description: >- # this means to ignore newlines until "baseurl:"
-  Dan O'Connell - I'm a designer who loves creating awesome digital experiences.
+  Dan O'Connell - I am a designer who loves creating awesome digital experiences.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "/portfolio-jekyll" # the base hostname & protocol for your site, e.g. http://example.com
 github_username:  theorise
