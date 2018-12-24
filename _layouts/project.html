@@ -4,7 +4,10 @@ layout: default
 
 <article>
   <header class="title title__small" data-block>
-    <h1>{{ page.title }} <span class="title__company">at {{ page.company }}</span></h1>
+    <h1>
+      <span class="title__company">{{ page.company }}</span>
+      {{ page.title }}
+    </h1>
   </header>
 
   <section class="project--section" id="overview" data-block>
