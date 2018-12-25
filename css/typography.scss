@@ -114,19 +114,6 @@ strong {
   @media (min-width: $md) {
     padding: 3rem 0;
   }
-
-  &.title__small {
-    margin-bottom: 2rem;
-    padding: 2rem 0;
-
-    h1 {
-      font-size: 1.5rem;
-
-      @media (min-width: $md) {
-        font-size: 4rem;
-      }
-    }
-  }
 }
 
 .title__highlight {
