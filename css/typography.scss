@@ -1,9 +1,9 @@
 h1 {
   color: #555;
   font-size: 3rem;
-  font-weight: 600;
-  letter-spacing: -0.125rem;
-  line-height: 1.125;
+  font-weight: 500;
+  letter-spacing: -0.3rem;
+  line-height: 1.25;
   position: relative;
 
   .title__highight {
@@ -15,7 +15,7 @@ h1 {
   }
 
   @media (min-width: $lg) {
-    font-size: 6rem;
+    font-size: 4.75rem;
   }
 }
 
@@ -110,10 +110,6 @@ strong {
 .title {
   margin-bottom: 6rem;
   padding: 2rem 0;
-
-  @media (min-width: $md) {
-    padding: 3rem 0;
-  }
 }
 
 .title__highlight {
@@ -127,64 +123,10 @@ strong {
   font-weight: 400;
 }
 
-// .title__slide {
-//   display: inline;
-//   text-indent: 1rem;
-//
-//   img {
-//     height: 5rem;
-//     margin-bottom: -1rem;
-//   }
-//
-//   span {
-//     animation: topToBottom 15s ease-out infinite 0s;
-//     opacity: 0;
-//     overflow: hidden;
-//     position: absolute;
-//
-//     &:nth-child(2) {
-//       animation-delay: 3s;
-//     }
-//
-//     &:nth-child(3) {
-//       animation-delay: 6s;
-//     }
-//
-//     &:nth-child(4) {
-//       animation-delay: 9s;
-//     }
-//
-//     &:nth-child(5) {
-//       animation-delay: 12s;
-//     }
-//   }
-// }
+.headline {
+  min-height: 24rem;
+}
 
-// @keyframes topToBottom {
-//   0% { opacity: 0; }
-//
-//   5% {
-//     opacity: 0;
-//     transform: translateY(-50px);
-//   }
-//
-//   10% {
-//     opacity: 1;
-//     transform: translateY(0);
-//   }
-//
-//   25% {
-//     opacity: 1;
-//     transform: translateY(0);
-//   }
-//
-//   30% {
-//     opacity: 0;
-//     transform: translateY(50px);
-//   }
-//   80% { opacity: 0; }
-//   100% { opacity: 0; }
-// }
 
 ul {
   list-style-type: disc;
