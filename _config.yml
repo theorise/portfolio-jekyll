@@ -13,8 +13,10 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: Dan OC
-introduction: I am a designer who loves creating awesome digital experiences.
+title: Dan OC - Digital Design & Development
+name: I'm Dan
+introduction: I design + code digital interfaces.
+workstatus: I am currently working for the <a href="https://www.linkedin.com/company/lemonpi/" target="_blank">LemonPi team</a> as the sole UX designer.
 titlenodes:
 - text: simplicity
 - text: accessibility
@@ -23,10 +25,11 @@ titlenodes:
 - text: patterns
 email: hello@danoc.nl
 description: >- # this means to ignore newlines until "baseurl:"
-  Dan O'Connell - I am a designer who loves creating awesome digital experiences.
+  Dan O'Connell - I design &amp; code digital interfaces.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "/portfolio-jekyll" # the base hostname & protocol for your site, e.g. http://example.com
 github_username:  theorise
+footer: This website is built using <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> as a site generator, <a href="https://github.com/theorise/portfolio-jekyll" target="_blank">Github</a> for hosting and versioning & the font <a href="https://fonts.google.com/specimen/Noto+Sans+JP" target="_blank">Noto Sans JP</a> is served using the Google Font API.
 
 # Build settings
 markdown: kramdown

@@ -1,69 +1,31 @@
 .header {
-  box-sizing: border-box;
-  display: flex;
-  justify-content: space-between;
-  margin: 2rem 0 2rem 0;
-  padding: 2rem 0 0.5rem 0;
-  position: static;
-  top: -1.5rem;
-  z-index: 2;
+  width: 100%;
+  border-top: 0.5rem solid blue;
+  position: relative;
 }
 
-.nav {
+.title {
+  background-color: #eee;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  align-items: center;
+  padding: 7.5rem 0;
   width: 100%;
+  position: relative;
 
   @media (min-width: $md) {
-    flex-wrap: nowrap;
+    padding: 10rem 0;
   }
 }
 
-.nav--title {
-  color: rgba(blue, 0.75);
-  text-decoration: none;
-  text-transform: uppercase;
-  margin: 0.5rem 0 2rem;
-  font-weight: 600;
+.title--lg {
+	@media (min-width: $md) {
+		padding: 15rem 0;
+	}
+}
+
+.navigation {
+  position: absolute;
+  top: 4rem;
+  z-index: 1;
   width: 100%;
-  position: sticky;
-  top: -6rem;
-
-  @media (min-width: $md) {
-    width: auto;
-  }
-}
-
-.nav--list {
-  display: flex;
-  list-style-type: none;
-  margin-bottom: 0;
-  padding-left: 0;
-  width: 100%;
-
-  @media (min-width: $md) {
-    width: auto;
-  }
-}
-
-.nav--item {
-  opacity: 1;
-  margin-left: 0;
-  padding-left: 0;
-
-  & + .nav--item {
-    margin-left: 2.5rem;
-  }
-
-  .link {
-    line-height: 2rem;
-    font-size: 0.75rem;
-    font-weight: 600;
-    text-transform: uppercase;
-
-    @media (min-width: $md) {
-      font-size: 1rem;
-    }
-  }
 }

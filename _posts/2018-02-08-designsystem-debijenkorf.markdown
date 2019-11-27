@@ -3,7 +3,7 @@ layout: project
 metaname: dbk-designsystem
 title:  Design System
 company: de Bijenkorf
-description: Unifying the digital branding and UI for de Bijenkorf. Built using Sketch files, HTML, CSS and Javascript components
+description: Unifying the digital branding and UI for de Bijenkorf. Built using Sketch files, HTML, CSS and Javascript.
 year: 2017-2018
 overview: <p>The major Dutch retailer, de Bijenkorf have been rapidly expanding their online business. As new digital products are being introduced, there has been a need to bring consistency to the branding and UI.</p><p>I collaborated with the design and development teams to create a design system to improve work flows and to create a single source of truth for designs.</p>
 personas: false

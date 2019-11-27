@@ -1,141 +1,92 @@
 h1 {
-  color: #555;
+  color: #333333;
   font-size: 2rem;
-  font-weight: 500;
-  letter-spacing: -0.15rem;
-  line-height: 1.25;
+  font-weight: bold;
+  letter-spacing: -0.075rem;
+  line-height: 1.5;
   position: relative;
 
-  .title__highight {
-    font-weight: 400;
+  a,
+  .link {
+    font-size:1.25rem;
   }
-
-  @media (min-width: $md) {
-    letter-spacing: -0.3rem;
-    font-size: 3.5rem;
-  }
-
-  @media (min-width: $lg) {
-    font-size: 4.75rem;
-  }
-}
-
-h2 {
-  color: #555;
-  font-size: 1.5rem;
-  font-weight: 600;
-  letter-spacing: -0.05rem;
-  line-height: 1.15;
-  margin-bottom: 1.5rem;
-  position: relative;
 
   @media (min-width: $md) {
     font-size: 3rem;
   }
 
-  .title__highight {
-    font-weight: 400;
+  @media (min-width: $lg) {
+    font-size: 3.5rem;
+  }
+}
+
+h2 {
+  color: #333333;
+  font-size: 1.75rem;
+  font-weight: 600;
+  letter-spacing: 0.05rem;
+  line-height: 1.15;
+  margin-bottom: 1.75rem;
+  position: relative;
+
+  @media (min-width: $md) {
+    font-size: 2.25rem;
   }
 }
 
 h3 {
-  color: #555;
-  font-size: 1.25rem;
-  font-weight: 500;
-  margin-bottom: 1rem;
+  color: #111;
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
   position: relative;
   line-height: 1.75;
 }
 
+
+h4 {
+  font-size: 1.25rem;
+  font-weight: 500;
+  color: #BBBBBB;
+}
+
+.title__highight {
+  color: #BBBBBB;
+}
+
 p {
-  color: #555;
-  font-size: 1rem;
+  color: #666;
+  font-size: 1.25rem;
   font-weight: 400;
-  letter-spacing: -0.025rem;
+  letter-spacing: -0.015rem;
   line-height: 2rem;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
+  max-width: $md;
 
   &:empty {
     margin-bottom: 0;
   }
 }
 
-p.small {
-  font-size: 0.75rem;
-  letter-spacing: 0.025rem;
-  opacity: 0.75;
-  margin-bottom: 0;
-}
-
-
+a,
 .link {
-	color: rgba(blue, 0.75);
-	font-size: 0.875rem;
-  font-weight: 600;
-  position: relative;
-	text-decoration: none;
+	color: blue;
+  line-height: 2;
+  font-weight: bold;
+  text-decoration: none;
+  letter-spacing: 0;
+  border-bottom: 2px solid blue;
+  padding: 0 0.125rem;
+  transition: background-color 125ms ease-out;
 
-	span {
-		padding-bottom: 4px;
-
-    &::after {
-      content: "";
-      position: absolute;
-      bottom: -0.5rem;
-      left: 0;
-      background: blue;
-      height: 4px;
-      opacity: 0;
-      width: 25%;
-      transition: all 200ms ease-in;
-    }
-	}
-
-	&:hover,
-  &.is-active {
-    span::after {
-      opacity: 1;
-      width: 100%;
-  	}
+  &:hover {
+    background-color: rgba(blue, 0.25);
   }
-}
-
-.link.link__dark {
-  color: #525252;
 }
 
 strong {
-  font-weight: 500;
+  font-weight: 600;
 }
-
-.title {
-  margin-bottom: 2rem;
-  padding: 2rem 0;
-}
-
-.title__highlight {
-  color: rgba(blue, 0.75);
-  text-decoration: none;
-}
-
-.title__company {
-  display: block;
-  font-size: 75%;
-  font-weight: 400;
-}
-
-.headline {
-  min-height: 12.5rem;
-
-  @media (min-width: $md) {
-    min-height: 17.5rem;
-  }
-
-  @media (min-width: $lg) {
-    min-height: 23.5rem;
-  }
-}
-
 
 ul {
   list-style-type: disc;

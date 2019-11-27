@@ -1,6 +1,6 @@
 
 body {
-	font-family: 'Inter UI', -apple-system, BlinkMacSystemFont, sans-serif;
+	font-family: 'Noto Sans JP', -apple-system, BlinkMacSystemFont, sans-serif;
 	background-repeat: no-repeat;
   background-attachment: fixed;
 	background-image: linear-gradient(180deg, #fdfbfb 0%, #ebedee 100%);
@@ -20,24 +20,19 @@ body {
 
 .project {
 	justify-content: center;
-	margin-bottom: 4rem;
-	padding: 2rem 10px;
+	margin: 2rem 0;
 	display: flex;
 	flex-wrap: wrap;
 	background-color: transparent;
 	opacity: 0.75;
 
-	&:hover {
-		.project--img {
-			transform: scale(1);
-		}
-	}
-
-
 	@media (min-width: $md) {
 		flex-wrap: nowrap;
-		padding: 2rem;
 	}
+}
+
+.project__right {
+	flex-direction: row-reverse;
 }
 
 .project--img {
@@ -48,13 +43,17 @@ body {
 	overflow: hidden;
 	text-align: center;
 	transform: scale(0.95);
-	transition: all 500ms ease-out;
+	border: none;
 
 	@media (min-width: $md) {
 		height: auto;
 		padding-bottom: 0;
 		text-align: left;
 		width: calc(40% - 10px);
+	}
+
+	&:hover {
+		background-color: transparent;
 	}
 }
 
@@ -64,7 +63,6 @@ body {
 	width: 100%;
 
 	@media (min-width: $md) {
-		margin-left: 20px;
 		width: calc(55% - 10px);
 	}
 
@@ -83,11 +81,14 @@ body {
 }
 
 .project--section {
-	margin-bottom: 8rem;
 
 	ul {
-		max-width: 550px;
+		max-width: $md;
 	}
+}
+
+.section--highlight {
+	background-color: #DDD;
 }
 
 .project--toggle {
@@ -139,12 +140,6 @@ img {
 	background-color: transparent;
 	opacity: 0.75;
 	transition-duration: 250ms !important;
-
-	&:hover {
-		box-shadow: 0 1rem 2rem rgba(36, 34, 56, 0.12);
-		background-color: #fdfbfb;
-		opacity: 1;
-	}
 }
 
 .design__block {
@@ -156,10 +151,10 @@ img {
 	width: 100%;
 
 	p {
-		font-size: 0.75rem;
+		text-align: center;
 		letter-spacing: 0.025rem;
 		line-height: 1.5;
-		opacity: 0.75;
+		max-width: none;
 	}
 }
 
@@ -175,12 +170,8 @@ img {
 .nav--articles {
 	display: flex;
 	justify-content: space-between;
-	margin: 6rem 0;
+	margin: 0;
 	padding: 2rem 0;
-
-	.link {
-		text-transform: uppercase;
-	}
 
 	.article--item.article--next {
 		text-align: right;
@@ -192,7 +183,6 @@ img {
 [data-block] {
 	.js-on & {
 		opacity: 0;
-		transition: all 750ms ease-in;
 
 		&.fade-in {
 			opacity: 1;
@@ -200,6 +190,20 @@ img {
 	}
 }
 
+section {
+	width: 100%;
+	padding: 4rem 0;
+}
+
 footer {
 	padding: 4rem 0;
+	width: 100%;
+	background-color: #EDEDED;
+	border-top: 0.5rem solid #EBEBEB;
+
+	p {
+		font-size: 80%;
+		margin: 0;
+		max-width: none;
+	}
 }

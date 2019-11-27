@@ -5,7 +5,7 @@ title:  Click & Collect
 company: Intersport
 description: Overhauling the user journey, UI and technology for in store collections in an attempt to modernise the brand and raise online awareness.
 year: 2018
-overview: <p>Intersports' website accounts or less than one percent of the company turnover. They are trying to modernize their business by creating an omni channel experience. Click & Collect is a feature that can help connect the website and stores. It is heavily underused and has low customer retention.</p><p>I reviewed the user journey and the UI to see what could be improved and what technologies can be leveraged.</p>
+overview: <p>Intersport are trying to modernize their business by creating an omni channel experience. Click & Collect is a feature that can help connect the website and stores.</p><p>It is heavily underused and has low customer retention.</p><p>I reviewed the user journey and the UI to see what could be improved and what technologies could be leveraged.</p>
 personas: true
 analysis: <p>After researching the current product and going through the user journey, from purchase to store pick up, these were the major points the design should focus on:</p><ul><li><p>There is no clear message informing users about the Click & Collect service</p></li><li><p>Delivery options are too late in the user flow</p></li><li><p>Store opening times are frustrating to find</p></li><li><p>Only slow and expensive email communication was pushed</p></li><li><p>There are no reasons to use the order history pages</p></li><li><p>Information is not shared between online and stores</p></li><li><p>There is no follow up after purchase</p></li><li><p>The user has no control over reminders</p></li></ul>
 userflows: true
