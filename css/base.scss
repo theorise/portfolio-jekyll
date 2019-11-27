@@ -24,7 +24,6 @@ body {
 	display: flex;
 	flex-wrap: wrap;
 	background-color: transparent;
-	opacity: 0.75;
 
 	@media (min-width: $md) {
 		flex-wrap: nowrap;
@@ -138,12 +137,7 @@ img {
 	justify-content: center;
 	text-align: center;
 	background-color: transparent;
-	opacity: 0.75;
 	transition-duration: 250ms !important;
-}
-
-.design__block {
-	// background-color: #fefefe;
 }
 
 .design--text {
