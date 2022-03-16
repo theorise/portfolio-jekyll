@@ -13,10 +13,10 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: Dan OC - Digital Design & Development
+title: Dan OC - Digital Designer
 name: I'm Dan
-introduction: I design + code digital interfaces.
-workstatus: I am currently working for the <a href="https://www.linkedin.com/company/lemonpi/" target="_blank">WPP DCO team</a> as a UX designer.
+introduction: I design digital experiences.
+workstatus: I am currently working for the <a href="https://www.linkedin.com/company/choreograph/" target="_blank">Choreograph Create team</a> as a UX designer.
 titlenodes:
 - text: simplicity
 - text: accessibility
@@ -25,7 +25,7 @@ titlenodes:
 - text: patterns
 email: hello@danoc.nl
 description: >- # this means to ignore newlines until "baseurl:"
-  Dan O'Connell - I design &amp; code digital interfaces.
+  Dan O'Connell - I design &amp; digital experiences.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "/portfolio-jekyll" # the base hostname & protocol for your site, e.g. http://example.com
 github_username:  theorise
